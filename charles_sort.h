@@ -48,10 +48,10 @@ void sort_sorted_vec_with_one_changed(std::vector<T>& vec, int changed_index, Co
             comparator
         );
         destination_index = std::distance(vec.begin(), it);
-        if (destination_index >= vec.size())
-        {
-            destination_index = vec.size() - 1;
-        }
+    }
+    if (destination_index >= vec.size())
+    {
+        destination_index = vec.size() - 1;
     }
     if(changed_index == destination_index)
     {
